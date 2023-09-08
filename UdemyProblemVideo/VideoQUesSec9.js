@@ -32,3 +32,6 @@ for (const [key, value] of question) {
   if (typeof key !== "number") console.log(false);
 }
 console.log(answer);
+
+//Udemy answer / this is way more simple
+console.log(question.get(question.get("correct") === answer));
