@@ -9,3 +9,15 @@ And now explain to YOURSELF (or someone around you) WHY this worked! Take all th
 
 GOOD LUCK 😀
 */
+
+(function () {
+  const header = document.querySelector("h1");
+  header.style.color = "red";
+
+  document.querySelector("body").addEventListener("click", function () {
+    header.style.color = "blue";
+  });
+})();
+
+//explanation is the closure is necessary or it's useful because by this time this callback here is executed, the IIFE is now long gone, so it has already been executed.
+//Another explanation is that the header is in the backpack of the function
